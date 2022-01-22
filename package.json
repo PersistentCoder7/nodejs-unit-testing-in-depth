@@ -1,0 +1,15 @@
+{
+  "name": "nodejs-unit-testing-in-depth",
+  "version": "1.0.0",
+  "description": "​A focused, in-depth look into Node.js unit testing, from absolute beginner to very advanced.",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^9.1.4"
+  }
+}
