@@ -6,6 +6,7 @@
 ## Resources
 
 1. [Mocha](https://mochajs.org/)
+2. [Chai assertion library](https://www.chaijs.com/)
 
 ### Description
 
