@@ -3,6 +3,16 @@
 
 ​A focused, in-depth look into Node.js unit testing, from absolute beginner to very advanced.
 
+## Notes
+
+1. Structuring the test directory: Under the test directory mirror the src code directory and create test files under it. The second approach is to create a test file in each direction beside the source code. The second approach is favoured because it invovles less work if the files are moved around.
+2. To ensure that the only the files names containing 'test' are picked and executed. Make the following changes. The single quotes are important to escape the text correctly.
+
+```Javascript
+mocha './lib/**/*.test.js'
+mocha --recursive //This is used if we want to recurse the sub-directories.
+```
+
 ## Resources
 
 1. [Mocha](https://mochajs.org/)
