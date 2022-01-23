@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "cross-env NODE_ENV=development mocha \"./{,!(node_modules)/**/}*.test.js\" --exit",
-    "test2": "mocha \"./tests/**/*.js\" --recursive",
-    "coverage": "cross-env NODE_ENV=development nyc --reporter=text npm test"
+    "test": "cross-env NODE_ENV=development ./node_modules/mocha/bin/mocha \"./{,!(node_modules)/**/}*.test.js\" --exit",
+    "test2": "./node_modules/mocha/bin/mocha \"./tests/**/*.js\" --recursive",
+    "coverage": "cross-env NODE_ENV=development nyc --reporter=text npm test",
+    "stest": "./node_modules/mocha/bin/mocha demo.test.js"
   },
   "author": "",
   "license": "ISC",
